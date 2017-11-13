@@ -3,14 +3,14 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
-<+F12::
+<+F11::
 SetTitleMatchMode, 2 ; approximate match
-IfWinExist, emacs@NB-PC0K48BC
+IfWinExist, PhpStorm
 {
-WinActivate, emacs@NB-PC0K48BC
+WinActivate, PhpStorm
 }
-IfWinNotExist, emacs@NB-PC0K48BC
+IfWinNotExist, PhpStorm
 {
-Run "C:\Users\Marcus.Puchalla\Downloads\emacs-25.1-i686-w64-mingw32\bin\emacs.exe"
+Run "C:\Program Files\JetBrains\PhpStorm 2017.2.3\bin\phpstorm64.exe"
 }
 return

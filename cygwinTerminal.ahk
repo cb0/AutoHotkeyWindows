@@ -3,13 +3,13 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
-<+F12::
+<+F9::
 SetTitleMatchMode, 2 ; approximate match
-IfWinExist, emacs@NB-PC0K48BC
+IfWinExist, cygdrive
 {
-WinActivate, emacs@NB-PC0K48BC
+WinActivate, cygdrive
 }
-IfWinNotExist, emacs@NB-PC0K48BC
+IfWinNotExist, cygdrive
 {
 Run "C:\Users\Marcus.Puchalla\Downloads\emacs-25.1-i686-w64-mingw32\bin\emacs.exe"
 }
