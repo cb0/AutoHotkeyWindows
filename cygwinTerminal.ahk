@@ -3,7 +3,7 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
-<+F9::
+<+F10::
 SetTitleMatchMode, 2 ; approximate match
 IfWinExist, cygdrive
 {
@@ -11,6 +11,6 @@ WinActivate, cygdrive
 }
 IfWinNotExist, cygdrive
 {
-Run "C:\Users\Marcus.Puchalla\Downloads\emacs-25.1-i686-w64-mingw32\bin\emacs.exe"
+Run "C:\cygwin64\bin\mintty.exe" -i /Cygwin-Terminal.ico -
 }
 return

@@ -3,15 +3,15 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
-<+F10::
+<+F9::
 SetTitleMatchMode, 2 ; approximate match
-IfWinExist, Firefox
+IfWinExist, Mozilla Firefox
 {
-WinActivate, Firefox
+WinActivate, Mozilla Firefox
 }
-IfWinNotExist, Firefox
+IfWinNotExist, Mozilla Firefox
 {
-Run "C:\Program Files (x86)\Mozilla Firefox ESR\firefox.exe"
+Run "C:\Program Files\Nightly\firefox.exe"
 }
 return
 

@@ -11,6 +11,6 @@ WinActivate, emacs@NB-PC0K48BC
 }
 IfWinNotExist, emacs@NB-PC0K48BC
 {
-Run "C:\Users\Marcus.Puchalla\Downloads\emacs-25.1-i686-w64-mingw32\bin\emacs.exe"
+Run "C:\projects\emacs-25.3-i686\bin\runemacs.exe"
 }
 return
